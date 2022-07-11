@@ -1,0 +1,17 @@
+# Ӧ�ö˿�
+server:
+  port: 7901
+spring:
+  application:
+    # Ӧ������
+    name: provider-a
+
+# eureka ����
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@localhost:8761/eureka
+
+logging:
+  level:
+    root: INFO

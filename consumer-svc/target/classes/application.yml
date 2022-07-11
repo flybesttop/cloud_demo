@@ -1,0 +1,17 @@
+# Ӧ�ö˿�
+server:
+  port: 8001
+spring:
+  application:
+    # Ӧ������
+    name: consumer
+
+# eureka ����
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@localhost:8761/eureka
+
+logging:
+  level:
+    root: INFO

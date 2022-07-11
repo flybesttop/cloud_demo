@@ -1,0 +1,4 @@
+/.idea/
+/cloud-eureka/.mvn/
+/consumer-svc/.mvn/
+/provider-a-svc/.mvn/
