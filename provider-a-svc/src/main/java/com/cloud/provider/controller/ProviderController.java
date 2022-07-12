@@ -1,6 +1,6 @@
-package com.cloud.providerA.controller;
+package com.cloud.provider.controller;
 
-import com.cloud.providerA.service.ProviderService;
+import com.cloud.provider.service.ProviderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
