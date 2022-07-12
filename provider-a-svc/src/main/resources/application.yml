@@ -1,12 +1,10 @@
-# 应用端口
 server:
   port: 7901
 spring:
   application:
-    # 应用名称
-    name: provider-a
+    name: provider
 
-# eureka 配置
+# eureka
 eureka:
   client:
     serviceUrl:

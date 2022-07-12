@@ -1,12 +1,10 @@
-# Ӧ�ö˿�
 server:
   port: 7901
 spring:
   application:
-    # Ӧ������
-    name: provider-a
+    name: provider
 
-# eureka ����
+# eureka
 eureka:
   client:
     serviceUrl:

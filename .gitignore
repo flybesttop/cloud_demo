@@ -2,3 +2,4 @@
 /cloud-eureka/.mvn/
 /consumer-svc/.mvn/
 /provider-a-svc/.mvn/
+/provider-b-svc/.mvn/
