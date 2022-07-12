@@ -1,12 +1,12 @@
-# Ó¦ÓÃ¶Ë¿Ú
+# Ó¦ï¿½Ã¶Ë¿ï¿½
 server:
   port: 8001
 spring:
   application:
-    # Ó¦ÓÃÃû³Æ
+    # Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     name: consumer
 
-# eureka ÅäÖÃ
+# eureka ï¿½ï¿½ï¿½ï¿½
 eureka:
   client:
     serviceUrl:
@@ -19,3 +19,17 @@ logging:
 feign:
   hystrix:
     enabled: true
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enable: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

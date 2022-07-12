@@ -20,8 +20,13 @@ public class ProviderService {
     }
 
     public String getGoods(){
-        throw new RuntimeException("报错");
-//        return "你从生产者A中获取到了一件商品";
+//        throw new RuntimeException("报错");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "你从生产者A中获取到了一件商品";
     }
 
 }

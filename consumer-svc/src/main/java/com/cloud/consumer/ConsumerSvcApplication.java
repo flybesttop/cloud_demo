@@ -7,10 +7,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableHystrix
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients(basePackages = {"com.cloud.consumer.client"})
-@EnableCircuitBreaker
 public class ConsumerSvcApplication {
 
     public static void main(String[] args) {
