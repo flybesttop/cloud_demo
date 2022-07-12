@@ -3,3 +3,8 @@
 /consumer-svc/.mvn/
 /provider-a-svc/.mvn/
 /provider-b-svc/.mvn/
+/cloud-eureka/target/
+/consumer-svc/target/
+/middleman-svc/target/
+/provider-a-svc/target/
+/provider-b-svc/target/

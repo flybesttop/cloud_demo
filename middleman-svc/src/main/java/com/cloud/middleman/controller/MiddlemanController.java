@@ -1,6 +1,6 @@
-package com.cloud.provider.controller;
+package com.cloud.middleman.controller;
 
-import com.cloud.provider.service.ProviderService;
+import com.cloud.middleman.service.MiddlemanService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,26 +8,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 生产者服务
+ * 中间商服务
  * @author mtx
  * @date 2022-07-11
  */
 @Slf4j
 @RestController
-@RequestMapping("/provider")
+@RequestMapping("/middleman")
 @RequiredArgsConstructor
-public class ProviderController {
+public class MiddlemanController {
 
-    private final ProviderService providerService;
+    private final MiddlemanService middlemanService;
 
     @GetMapping("/testHello")
     public String testHello(){
-        return providerService.testHello();
-    }
-
-    @GetMapping("/getGoods")
-    public String getGoods(){
-        return providerService.getGoods();
+        return middlemanService.testHello();
     }
 
 }

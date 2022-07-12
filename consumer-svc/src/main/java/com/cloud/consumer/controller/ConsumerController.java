@@ -21,9 +21,14 @@ public class ConsumerController {
 
     private final ConsumerService consumerService;
 
-    @GetMapping("v1/testHello")
+    @GetMapping("/testHello")
     public String testHello() {
         return consumerService.testHello();
+    }
+
+    @GetMapping("/payGoods")
+    public String payGoods() {
+        return consumerService.payGoods();
     }
 
 }

@@ -16,12 +16,10 @@ import org.springframework.stereotype.Service;
 public class ProviderService {
 
     public String testHello() {
-        return "生产者A，你好！";
+        return "生产者B，你好！";
     }
 
-    public String getGoods(){
-        throw new RuntimeException("报错");
-//        return "你从生产者A中获取到了一件商品";
+    public String getGoods() {
+        return "你从生产者B中获取到了一件商品";
     }
-
 }
