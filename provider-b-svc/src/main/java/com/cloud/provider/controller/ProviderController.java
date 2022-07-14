@@ -1,5 +1,7 @@
 package com.cloud.provider.controller;
 
+import com.cloud.common.dto.BaseResponse;
+import com.cloud.provider.dto.Product;
 import com.cloud.provider.service.ProviderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +28,7 @@ public class ProviderController {
     }
 
     @GetMapping("/getGoods")
-    public String getGoods(){
+    public BaseResponse<Product> getGoods(){
         return providerService.getGoods();
     }
 
