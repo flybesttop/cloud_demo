@@ -8,3 +8,11 @@
 /middleman-svc/target/
 /provider-a-svc/target/
 /provider-b-svc/target/
+/cloud-common/cloud-common.iml
+/cloud-eureka/cloud-eureka.iml
+/consumer-svc/consumer-svc.iml
+/middleman-svc/middleman-svc.iml
+/provider-b-svc/provider-b-svc.iml
+/provider-svc/provider-svc.iml
+/cloud_demo.iml
+/provider-a-svc/provider-a-svc.iml

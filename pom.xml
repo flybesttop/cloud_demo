@@ -21,7 +21,7 @@
         <module>cloud-common</module>
         <module>consumer-svc</module>
         <module>middleman-svc</module>
-        <module>provider-svc</module>
+        <module>provider-a-svc</module>
         <module>provider-b-svc</module>
     </modules>
 
