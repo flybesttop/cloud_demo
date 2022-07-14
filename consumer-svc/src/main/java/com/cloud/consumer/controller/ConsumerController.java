@@ -1,5 +1,7 @@
 package com.cloud.consumer.controller;
 
+import com.cloud.common.dto.BaseResponse;
+import com.cloud.consumer.dto.Product;
 import com.cloud.consumer.service.ConsumerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +29,7 @@ public class ConsumerController {
     }
 
     @GetMapping("/payGoods")
-    public String payGoods() {
+    public BaseResponse<Product> payGoods() {
         return consumerService.payGoods();
     }
 

@@ -1,6 +1,8 @@
 package com.cloud.consumer.client;
 
+import com.cloud.common.dto.BaseResponse;
 import com.cloud.consumer.client.fallback.ProviderFallbackFactory;
+import com.cloud.consumer.dto.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -14,7 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ProviderClient {
 
     @GetMapping("/getGoods")
-    String getGoods();
+    BaseResponse<Product> getGoods();
 
 
 }

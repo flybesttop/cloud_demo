@@ -1,6 +1,8 @@
 package com.cloud.consumer.service;
 
+import com.cloud.common.dto.BaseResponse;
 import com.cloud.consumer.client.ProviderClient;
+import com.cloud.consumer.dto.Product;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -30,13 +32,12 @@ public class ConsumerService {
      *
      * @return
      */
-    public String payGoods() {
+    public BaseResponse<Product> payGoods() {
 
 //        String payUrl = "http://provider/provider/getGoods";
 //        return restTemplate.getForObject(payUrl, String.class);
 
-        String res = providerClient.getGoods();
-        return res;
+        return providerClient.getGoods();
 
     }
 
