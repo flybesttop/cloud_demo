@@ -27,7 +27,7 @@ public class ProviderService {
     private String port;
 
     public String testHello() {
-        return "生产者B，你好！";
+        return "生产者A，你好！";
     }
 
     public BaseResponse<Product> getGoods() {
